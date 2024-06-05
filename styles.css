@@ -1,0 +1,169 @@
+/* styles.css */
+
+/* Reset default styles */
+
+.logo {
+    width: 130px;
+    height: 100px;
+    background: url('/logo-rosario.png');
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    position: absolute;
+}
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a default font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E6E8E5;
+    padding: 20px;
+}
+
+header {
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+header nav {
+    position: static; 
+    display: block;
+    text-align: right;
+    margin-bottom: none;
+  }
+
+
+nav li {
+    display: inline-block;
+    margin-bottom: none;
+    padding: 20px 30px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Add some basic styles to headings and paragraphs */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+img {
+    max-width: 100%;
+    height: 400px;
+    width: 400px;
+}
+
+.intro
+{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.photo-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo-text h1, p {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-text p {
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+.photo-text img {
+    max-width: 100%;
+    height: 300px;
+    width: 300px;
+}
+
+.photo-text h1 {
+    margin-left: 20px;
+    max-width: 200px;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.element {
+  animation: slide-in 1s ease-in-out;
+}
+
+.syringa-flower {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    animation: syringa-sway 2s ease-in-out infinite;
+  }
+  
+  .syringa-flower::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #c49ecc;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    top: 50px;
+    left: 20px;
+    box-shadow: 0 -30px 0 #c49ecc, 30px -30px 0 #c49ecc, 30px 0 0 #c49ecc;
+  }
+  
+  .syringa-flower::after {
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    background-color: #8c6a94;
+    bottom: 0;
+    left: 45px;
+  }
+
+  .center-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #5c7457;
+    border-radius: 50%;
+    top: 52px;
+    left: 57px;
+  }
+  
+  @keyframes syringa-sway {
+    0%, 100% {
+      transform: translateX(0) rotate(0);
+    }
+    25% {
+      transform: translateX(-10px) rotate(-5deg);
+    }
+    50% {
+      transform: translateX(0) rotate(0);
+    }
+    75% {
+      transform: translateX(10px) rotate(5deg);
+    }
+  }
