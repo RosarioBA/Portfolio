@@ -15,6 +15,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
     width: 130px;
     height: 100px;
@@ -25,7 +29,7 @@
     position: absolute;
 }
 
-nav, h1, h2, h3{
+nav, h1, h2, h3 {
     font-family: 'adobe-caslon-pro';
 }
 
@@ -36,7 +40,6 @@ body, h1, p {
 
 /* Set a default font and background color */
 body {
-    font-family: Arial, sans-serif;
     background-color: #E6E8E5;
     padding: 20px;
 }
@@ -58,6 +61,7 @@ header nav {
     display: block;
     text-align: right;
     margin-bottom: none;
+    color: black;
   }
 
 
@@ -80,7 +84,7 @@ h1 {
     font-family: 'adobe-caslon-pro';
 }
 
-p {
+p, li {
     font-family: 'proxima-nova', sans-serif;
     font-size: 16px;
     margin-bottom: 20px;
@@ -88,8 +92,6 @@ p {
 
 img {
     max-width: 100%;
-    height: 400px;
-    width: 400px;
 }
 
 button {
@@ -212,3 +214,47 @@ button:hover {
     margin-bottom: 20px;
     border-radius: 5px;
   }
+
+  .contact {
+    background-color: #e7dae7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    max-width: 300px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+}
+
+  .contact-form textarea {
+    max-width: 500px;
+    height: 65%;
+    min-height: 100px;
+    width: auto;
+}
+
+/*about*/
+
+.image-thumbnail {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 20px;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
