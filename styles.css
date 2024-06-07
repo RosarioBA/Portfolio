@@ -258,3 +258,13 @@ button:hover {
   align-items: center;
   margin-bottom: 20px;
 }
+
+
+/*single project*/
+
+.thumbnail-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 20px;
+}
